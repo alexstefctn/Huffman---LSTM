@@ -20,7 +20,7 @@ def load_trained_model():
     idx2char = {int(k): v for k, v in vocab_data['idx2char'].items()}
     vocab_size = len(char2idx)  # Dimensiunea reala pe care a fost antrenat modelul
 
-    # 2. Se incarca ponderile din NPZ
+    # 2. Incarcam ponderile din NPZ
     weights = np.load("lstm_weights.npz")
     hidden_size = int(weights['hidden_size'][0])
     seq_len = int(weights['seq_len'][0])
