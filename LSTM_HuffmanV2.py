@@ -1,6 +1,5 @@
 """
 LSTM + Adaptive Huffman Coding
-Corectat pentru alinierea contextului de padding intre antrenare si decodare.
 """
 
 import numpy as np
