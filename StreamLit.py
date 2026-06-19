@@ -45,7 +45,7 @@ lstm_model, char2idx, idx2char, vocab_size, seq_len = load_trained_model()
 # --- CONFIGURARE INTERFATA GRAFICA ---
 st.set_page_config(page_title="Smart Keyboard LSTM", layout="centered")
 
-st.title("Simulator Smart Keyboard (Limba Romană)")
+st.title("Simulator Smart Keyboard (Limba Română)")
 st.write("Tastați în caseta de mai jos. Modelul LSTM va prezice live top 3 cele mai probabile litere care urmează.")
 
 # Se initializeaza starea sesiunii pentru a retine textul introdus
@@ -101,7 +101,7 @@ if text_curent:
     # Se extrag top 3 cele mai mari probabilitati
     top_3_indici = np.argsort(probs)[-3:][::-1]
 
-    st.write("### Sugestii pentru urmatoarea literă:")
+    st.write("### Sugestii pentru următoarea literă:")
 
     # Se creeaza cele 3 butoane de sugestie
     col1, col2, col3 = st.columns(3)
