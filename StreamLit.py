@@ -113,7 +113,7 @@ if text_curent:
 
         # Se schimba vizual afisarea daca e vorba de un spatiu
         eticheta_buton = (
-            f"'{litera_sugerata}' ({probabilitate:.1f}%)"
+            f"'{litera_sugerata}' ({probabilitate:.1f}% || cod: {coduri[litera_sugerata]})"
             if litera_sugerata != ' '
             else f"'[Spatiu]' ({probabilitate:.1f}%)"
         )
